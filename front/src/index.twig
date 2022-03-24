@@ -1,0 +1,12 @@
+{% extends "layouts/layout.twig" %}
+
+{% block page %}
+
+	{% include '/blocks/stock/stock.twig' %}
+	{% include '/blocks/receipts/receipts.twig' with {title: 'Новые поступления'} %}
+	{% include '/blocks/subscription/subscription.twig' %}
+	{% include '/blocks/receipts/receipts.twig' with {title: 'Готовятся к выходу'} %}
+	{% include '/blocks/offers/offers.twig' %}
+	{% include '/blocks/news/news.twig' %}
+
+{% endblock %}

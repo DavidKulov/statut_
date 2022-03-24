@@ -1,0 +1,116 @@
+{# index.twig #}
+
+{% block footer %}
+	<footer class="footer">
+		<div class="footer__mailing">
+			<div class="footer__mailing-top">
+				<a href=""> {% include 'assets/img/facbock.svg' %} </a>
+				<a href=""> {% include 'assets/img/vk.svg' %} </a>
+				<a href=""> {% include 'assets/img/instagram.svg' %} </a>
+			</div>
+			<div class="container">
+				<div class="footer__mailing-lower">
+					{% include 'assets/img/logo.svg' %}
+					<div class="footer__mailing-iner">
+						<label class="g-input footer__mailing-label">
+							<input name="name" type="text" class="g-input__input footer__mailing-input" placeholder="Подписаться на рассылку" data-call="emty" data-msg="Заполните это поле">
+						</label>
+						<button class=" g-button footer__mailing-button">
+							{% include 'assets/img/Air.svg' %}
+						</button>
+					</div>
+					<div class="footer__mailing-icon">
+						<a href=""> {% include 'assets/img/Facebook-gray.svg' %} </a>
+						<a href=""> {% include 'assets/img/Instagram-gray.svg' %} </a>
+						<a href=""> {% include 'assets/img/Twitter-gray.svg' %} </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="footer__middle">
+				<ul class="footer__middle-ul">
+					<li class="footer__li-more">Покупателям {% include 'assets/img/arrow-down.svg' %}</li>
+					<li class="footer__li-less"> 
+						<a href=""> Наша почта </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Оплата и доставка </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Вопросы и ответы </a>
+					</li>
+				</ul>
+				<ul class="footer__middle-ul">
+					<li class="footer__li-more">Издательство {% include 'assets/img/arrow-down.svg' %}</li>
+					<li class="footer__li-less"> 
+						<a href=""> О компании </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Авторам </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Вакансии </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Контакты </a>
+					</li>
+				</ul>
+				<ul class="footer__middle-ul">
+					<li class="footer__li-more">Книги {% include 'assets/img/arrow-down.svg' %}</li>
+					<li class="footer__li-less"> 
+						<a href=""> Все категории </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Бестселлеры </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Новинки </a>
+					</li>
+					<li class="footer__li-less"> 
+						<a href=""> Скидки и акции </a>
+					</li>
+				</ul>
+				<ul class="footer__middle-ul">
+					<li class="footer__li-more">Прайс-лист {% include 'assets/img/arrow-down.svg' %}</li>
+					<div class="footer__li-wrapper">
+						{% include 'assets/img/File.svg' %}
+						<div class="footer__li-iner">
+							<li class="footer__li-less">
+								<a href=""> Скачать прайс-лист </a>
+							</li>
+							<li class="footer__li-less">PDF, 12 Mb</li>
+						</div>
+					</div>
+				</ul>
+				<ul class="footer__middle-ul">
+					<li class="footer__li-more">Телефон и Email</li>
+					<li class="footer__li-less footer__li-flex">{% include 'assets/img/mail.svg' %} market@estatut.ru</li>
+					<li class="footer__li-less footer__li-flex">{% include 'assets/img/device.svg' %} 8 (968) 660-65-50</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="footer__lower">
+				<ul class="footer__lower-ul">
+					<li class="footer__lower-li">
+						<a href=""> Политика конфиденциальности </a>
+						<a href=""> Договор оферты </a>
+					</li>
+					<li class="footer__lower-li">
+						<p>{% include 'assets/img/device.svg' %} 8 (968) 660-65-50 {% include 'assets/img/info.svg' %}</p>
+					</li>
+					<li class="footer__lower-li">
+						<p>{% include 'assets/img/mail.svg' %} market@estatut.ru</p>
+					</li>
+					<li class="footer__lower-li">
+						<p>{% include 'assets/img/places.svg' %}  ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
+					</li>
+					<li class="footer__lower-li">
+						<p>© 2020 Издательство «Статут»</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+{% endblock %}

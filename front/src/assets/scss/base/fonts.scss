@@ -1,0 +1,29 @@
+/*
+Пример подключения
+-------------------
+@font-face
+{
+	font-family: 'Roboto-mono';
+	src: url('./fonts/Roboto_mono/Light/RobotoMono-Light.eot');
+	src: url('./fonts/Roboto_mono/Light/RobotoMono-Light.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/Roboto_mono/Light/RobotoMono-Light.woff2') format('woff2'),
+		url('./fonts/Roboto_mono/Light/RobotoMono-Light.woff') format('woff'),
+		url('./fonts/Roboto_mono/Light/RobotoMono-Light.svg#RobotoMono-Light') format('svg'),
+		url('./fonts/Roboto_mono/Light/RobotoMono-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+*/
+@font-face
+{
+	font-family: 'Gosha_sans';
+	src: url('./fonts/Gosha_sans/Regular/GoshaSans-Regular.eot');
+	src: url('./fonts/Gosha_sans/Regular/GoshaSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('./fonts/Gosha_sans/Regular/GoshaSans-Regular.woff2') format('woff2'),
+		url('./fonts/Gosha_sans/Regular/GoshaSans-Regular.woff') format('woff'),
+		url('./fonts/Gosha_sans/Regular/GoshaSans-Regular.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
