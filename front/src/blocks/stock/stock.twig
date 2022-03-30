@@ -1,62 +1,73 @@
 <div class="stock">
-    <div class="container">
-        <div class="stock__wrapper">
-            <div class="stock__slider">
-                <div class="stock__slider-item">
-                    {% include 'assets/img/slider.svg' %}
-                    <button class="stock__slider-mask">
-                        {% include 'assets/img/next-arrow.svg' %}
-                    </button>
-                    <button class="stock__slider-mask">
-                        {% include 'assets/img/prev-arrow.svg' %}
-                    </button>
-                    <div class="stock__slider-switching">
-                        <buthon class="stock__slider-btn"></buthon>
-                        <buthon class="stock__slider-btn"></buthon>
-                        <buthon class="stock__slider-btn"></buthon>
-                        <buthon class="stock__slider-btn"></buthon>
-                    </div>
-                </div>
-            </div>
-            <div class="stock__books">
-                <div class="stock__books-wrapper-top">
-                    <p>Книга дня</p>
-                    <div class="stock__books-timer">
-                        <span>08:56:31</span>
-                    </div>
-                </div>
-                <a href="" class="stock__books-img">
-                    <img src="img/cover.webp" alt="">
-                </a>
-                <p class="stock__books-p">Корпоративное право</p>
-                <a href="">
-                    <p class="stock__books-p">Инвестирование: способы, риски, субъекты : монография</p>
-                </a>
-                <p class="stock__books-p">Майфат А.В.</p>
-                <p class="stock__books-p">4 450 ₽</p>
-                <div class="stock__books-wrapper">
-                    <button class="stock__books-button">
-                        {% include 'assets/img/basket-mobil.svg' %}
-                        <span>В корзину</span>
-                    </button>
-                    <button class="stock__books-button">
-                        {% include 'assets/img/flag-mobil.svg' %}
-                    </button>
-                </div>
-            </div>
-            <div class="stock__books-wrapper">
-                <div class="stock__books-purple">
-                    {% include 'assets/img/line.svg' %}
-                    {% include 'assets/img/purple-man.svg' %}
-                    <p>Бесплатно доставим ваш заказ при покупке от 2000 ₽</p>
-                </div>
-                <div class="stock__books-pink">
-                    {% include 'assets/img/pink-line.svg' %}
-                    {% include 'assets/img/pink-man.svg' %}
-                    <p class="stock__books-pink-text">Скидка</p> 
-                    <p>при регистрации до 15%</p>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="stock__wrapper">
+			<div class="stock__slider">
+				<div class="stock__slider-item">
+					<div class="stock__slider-img">
+						<img src="img/slide-one.webp" alt="" class="slide__img">
+					</div>
+					<div class="stock__slider-img">
+						<img src="img/slide-two.webp" alt="" class="slide__img">
+					</div>
+					<div class="stock__slider-img">
+						<img src="img/slide-fhree.webp" alt="" class="slide__img">
+					</div>
+					<div class="stock__slider-img">
+						<img src="img/slide-fho.webp" alt="" class="slide__img">
+					</div>
+				</div>
+				<div class="stock__slider-switching">
+					<buthon class="stock__slider-btn"></buthon>
+					<buthon class="stock__slider-btn"></buthon>
+					<buthon class="stock__slider-btn"></buthon>
+					<buthon class="stock__slider-btn"></buthon>
+				</div>
+			</div>
+			<button class="stock__slider-next" onclick="o2.stock.prev()">
+				{% include 'assets/img/prev-arrow.svg' %}
+			</button>
+			<button class="stock__slider-prev" onclick="o2.stock.next()">
+				{% include 'assets/img/next-arrow.svg' %}
+			</button>
+			<div class="stock__books">
+				<div class="stock__books-wrapper-top">
+					<p>Книга дня</p>
+					<div class="stock__books-timer">
+						<span>08:56:31</span>
+					</div>
+				</div>
+				<a href="" class="stock__books-img">
+					<img src="img/cover.webp" alt="">
+				</a>
+				<p class="stock__books-p">Корпоративное право</p>
+				<a href="">
+					<p class="stock__books-p">Инвестирование: способы, риски, субъекты : монография</p>
+				</a>
+				<p class="stock__books-p">Майфат А.В.</p>
+				<p class="stock__books-p">4 450 ₽</p>
+				<div class="stock__books-wrapper">
+					<button class="stock__books-button">
+						{% include 'assets/img/basket-mobil.svg' %}
+						<span>В корзину</span>
+					</button>
+					<button class="stock__books-button">
+						{% include 'assets/img/flag-mobil.svg' %}
+					</button>
+				</div>
+			</div>
+			<div class="stock__books-wrapper">
+				<div class="stock__books-purple">
+					{% include 'assets/img/line.svg' %}
+					{% include 'assets/img/purple-man.svg' %}
+					<p>Бесплатно доставим ваш заказ при покупке от 2000 ₽</p>
+				</div>
+				<div class="stock__books-pink">
+					{% include 'assets/img/pink-line.svg' %}
+					{% include 'assets/img/pink-man.svg' %}
+					<p class="stock__books-pink-text">Скидка</p>
+					<p>при регистрации до 15%</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

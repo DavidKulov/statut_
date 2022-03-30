@@ -17,7 +17,7 @@ const o2 =
 	 */
 	init()
 	{
-		o2.stock()
+		this.stock.init();
 	},
 	/**
 	* отслеживание клика вне блока
