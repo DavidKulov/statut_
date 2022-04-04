@@ -215,15 +215,12 @@
 		&:hover{background-color: rgba(103, 115, 135, 0.7);}
 		span
 		{
-			position: relative;
-			top: -4px;
-			left: 7px;
 			font-weight: 500;
 			font-size: 14px;
 			line-height: 15px;
 			color: #1C294D;
 			position: relative;
-			top: -4px;
+			top: -3px;
 			left: 2px;
 		}
 	}
@@ -370,10 +367,10 @@
 		}
 		.receipts__banner-wrapper>.receipts__banner-button:nth-child(1)
 		{
-			span
+			svg
 			{
 				position: relative;
-				top: -1px;
+				top: 1px;
 			}
 		}
 	}
@@ -447,6 +444,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		height: 38px;
+		margin-bottom: 10px;
 	}
 	.receipts__footer
 	{
