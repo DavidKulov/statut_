@@ -4,137 +4,204 @@
 			<div class="receipts__top">
 				<p>{{title}}</p>
 				<div class="receipts__top-btn">
-					<button> {% include 'assets/img/prev-arrow.svg' %} </button>
-					<button> {% include 'assets/img/next-arrow.svg' %} </button>
+					<button class="receipts__slider-next" onclick="o2.receipts.prev()"> {% include 'assets/img/prev-arrow.svg' %} </button>
+					<button class="receipts__slider-prev" onclick="o2.receipts.next()"> {% include 'assets/img/next-arrow.svg' %} </button>
 				</div>
 			</div>
 			<div class="receipts__middle">
-				<div class="receipts__middle-banner">
-					<div class="receipts__banner-iner">
-						<div class="receipts__banner-text">Бестселлер</div>
-						<div class="receipts__banner-text">1+1=3</div>
-					</div>
-					<a href="" class="receipts__banner-img">
-						<img src="img/cover-middle.webp" alt="">
-					</a>
-					<p class="receipts__banner-description">Корпоративное право</p>
-					<p class="receipts__banner-description">Инвестирование: способы, риски, субъекты : монография</p>
-					<p class="receipts__banner-description">Майфат А.В.</p>
-					<p class="receipts__banner-description">4 450 ₽</p>
-					<div class="receipts__banner-iner-two">
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/star.svg' %}
-							4.9
+				<div class="receipts__middle-slider">
+					<div class="receipts__middle-banner">
+						<div class="receipts__banner-iner">
+							<div class="receipts__banner-text">Бестселлер</div>
+							<div class="receipts__banner-text">1+1=3</div>
 						</div>
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/like.svg' %}
-							89% рекомендуют
+						<a href="" class="receipts__banner-img">
+							<img src="img/cover-middle.webp" alt="">
+						</a>
+						<p class="receipts__banner-description">Корпоративное право</p>
+						<p class="receipts__banner-description">Инвестирование: способы, риски, субъекты : монография</p>
+						<p class="receipts__banner-description">Майфат А.В.</p>
+						<p class="receipts__banner-description">4 450 ₽</p>
+						<div class="receipts__banner-iner-two">
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/star.svg' %}
+								<span>4.9</span>
+							</div>
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/like.svg' %}
+								89% рекомендуют
+							</div>
 						</div>
-					</div>
-					<div class="receipts__banner-wrapper">
-						<button class="receipts__banner-button">
-							{% include 'assets/img/basket-mobil.svg' %}
-							<span>В корзину</span>
-						</button>
-						<button class="receipts__banner-button">
-							{% include 'assets/img/flag-mobil.svg' %}
-						</button>
-					</div>
-				</div>
-				<div class="receipts__middle-banner">
-					<div class="receipts__banner-iner">
-						<div class="receipts__banner-text">Новинка</div>
-					</div>
-					<a href="" class="receipts__banner-img">
-						<img src="img/cover-middle-two.webp" alt="">
-					</a>
-					<p class="receipts__banner-description">Договорное право</p>
-					<p class="receipts__banner-description">Договор коммерческой концессии (франчайзинг). Граж...</p>
-					<p class="receipts__banner-description">Багдасарян А.Ф.</p>
-					<p class="receipts__banner-description">372 ₽</p>
-					<div class="receipts__banner-iner-two">
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/star.svg' %}
-							4.9
-						</div>
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/like.svg' %}
-							89% рекомендуют
+						<div class="receipts__banner-wrapper">
+							<button class="receipts__banner-button">
+								{% include 'assets/img/basket-mobil.svg' %}
+								<span>В корзину</span>
+							</button>
+							<button class="receipts__banner-button">
+								{% include 'assets/img/flag-mobil.svg' %}
+							</button>
 						</div>
 					</div>
-					<div class="receipts__banner-wrapper">
-						<button class="receipts__banner-button">
-							{% include 'assets/img/basket-mobil.svg' %}
-							<span>В корзину</span>
-						</button>
-						<button class="receipts__banner-button">
-							{% include 'assets/img/flag-mobil.svg' %}
-						</button>
-					</div>
-				</div>
-				<div class="receipts__middle-banner">
-					<div class="receipts__banner-iner">
-						<div class="receipts__banner-text">Бестселлер</div>
-						<div class="receipts__banner-text">1+1=3</div>
-					</div>
-					<a href="" class="receipts__banner-img">
-						<img src="img/cover-middle-fhree.webp" alt="">
-					</a>
-					<p class="receipts__banner-description">Конкурентное право</p>
-					<p class="receipts__banner-description">Договор коммерческой концессии (франчайзинг). Граж...</p>
-					<p class="receipts__banner-description">Башлаков-Николаев И.В.</p>
-					<p class="receipts__banner-description"><span>984 ₽</span> <span>1284 ₽</span> <span>Выгода 300 ₽</span> {% include 'assets/img/red-line.svg' %}</p>
-					<div class="receipts__banner-iner-two">
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/star.svg' %}
-							4.9
+					<div class="receipts__middle-banner">
+						<div class="receipts__banner-iner">
+							<div class="receipts__banner-text">Новинка</div>
 						</div>
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/like.svg' %}
-							89% рекомендуют
+						<a href="" class="receipts__banner-img">
+							<img src="img/cover-middle-two.webp" alt="">
+						</a>
+						<p class="receipts__banner-description">Договорное право</p>
+						<p class="receipts__banner-description">Договор коммерческой концессии (франчайзинг). Граж...</p>
+						<p class="receipts__banner-description">Багдасарян А.Ф.</p>
+						<p class="receipts__banner-description">372 ₽</p>
+						<div class="receipts__banner-iner-two">
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/star.svg' %}
+								4.9
+							</div>
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/like.svg' %}
+								89% рекомендуют
+							</div>
 						</div>
-					</div>
-					<div class="receipts__banner-wrapper">
-						<button class="receipts__banner-button">
-							{% include 'assets/img/basket-mobil.svg' %}
-							<span>В корзину</span>
-						</button>
-						<button class="receipts__banner-button">
-							{% include 'assets/img/flag-mobil.svg' %}
-						</button>
-					</div>
-				</div>
-				<div class="receipts__middle-banner">
-					<div class="receipts__banner-iner">
-						<div class="receipts__banner-text">Бестселлер</div>
-						<div class="receipts__banner-text">1+1=3</div>
-					</div>
-					<a href="" class="receipts__banner-img">
-						<img src="img/cover-middle.webp" alt="">
-					</a>
-					<p class="receipts__banner-description">Корпоративное право</p>
-					<p class="receipts__banner-description">Инвестирование: способы, риски, субъекты : монография</p>
-					<p class="receipts__banner-description">Майфат А.В.</p>
-					<p class="receipts__banner-description">4 450 ₽</p>
-					<p class="receipts__banner-description">450 ₽</p>
-					<div class="receipts__banner-iner-two receipts__banner-iner-clon">
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/star.svg' %}
-							4.9
-						</div>
-						<div class="receipts__banner-text-two">
-							{% include 'assets/img/like.svg' %}
-							89% рекомендуют
+						<div class="receipts__banner-wrapper">
+							<button class="receipts__banner-button">
+								{% include 'assets/img/basket-mobil.svg' %}
+								<span>В корзину</span>
+							</button>
+							<button class="receipts__banner-button">
+								{% include 'assets/img/flag-mobil.svg' %}
+							</button>
 						</div>
 					</div>
-					<div class="receipts__banner-wrapper">
-						<button class="receipts__banner-button">
-							{% include 'assets/img/basket-mobil.svg' %}
-							<span>В корзину</span>
-						</button>
-						<button class="receipts__banner-button">
-							{% include 'assets/img/flag-mobil.svg' %}
-						</button>
+					<div class="receipts__middle-banner">
+						<div class="receipts__banner-iner">
+							<div class="receipts__banner-text">Бестселлер</div>
+							<div class="receipts__banner-text">1+1=3</div>
+						</div>
+						<a href="" class="receipts__banner-img">
+							<img src="img/cover-middle-fhree.webp" alt="">
+						</a>
+						<p class="receipts__banner-description">Конкурентное право</p>
+						<p class="receipts__banner-description">Договор коммерческой концессии (франчайзинг). Граж...</p>
+						<p class="receipts__banner-description">Башлаков-Николаев И.В.</p>
+						<p class="receipts__banner-description"><span>984 ₽</span> <span>1284 ₽</span> <span>Выгода 300 ₽</span> {% include 'assets/img/red-line.svg' %}</p>
+						<div class="receipts__banner-iner-two">
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/star.svg' %}
+								4.9
+							</div>
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/like.svg' %}
+								89% рекомендуют
+							</div>
+						</div>
+						<div class="receipts__banner-wrapper">
+							<button class="receipts__banner-button">
+								{% include 'assets/img/basket-mobil.svg' %}
+								<span>В корзину</span>
+							</button>
+							<button class="receipts__banner-button">
+								{% include 'assets/img/flag-mobil.svg' %}
+							</button>
+						</div>
+					</div>
+					<div class="receipts__middle-banner">
+						<div class="receipts__banner-iner">
+							<div class="receipts__banner-text">Бестселлер</div>
+							<div class="receipts__banner-text">1+1=3</div>
+						</div>
+						<a href="" class="receipts__banner-img">
+							<img src="img/cover-middle.webp" alt="">
+						</a>
+						<p class="receipts__banner-description">Корпоративное право</p>
+						<p class="receipts__banner-description">Инвестирование: способы, риски, субъекты : монография</p>
+						<p class="receipts__banner-description">Майфат А.В.</p>
+						<p class="receipts__banner-description">4 450 ₽</p>
+						<p class="receipts__banner-description">450 ₽</p>
+						<div class="receipts__banner-iner-two receipts__banner-iner-clon">
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/star.svg' %}
+								4.9
+							</div>
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/like.svg' %}
+								89% рекомендуют
+							</div>
+						</div>
+						<div class="receipts__banner-wrapper">
+							<button class="receipts__banner-button">
+								{% include 'assets/img/basket-mobil.svg' %}
+								<span>В корзину</span>
+							</button>
+							<button class="receipts__banner-button">
+								{% include 'assets/img/flag-mobil.svg' %}
+							</button>
+						</div>
+					</div>
+					<div class="receipts__middle-banner">
+						<div class="receipts__banner-iner">
+							<div class="receipts__banner-text">Бестселлер</div>
+							<div class="receipts__banner-text">1+1=3</div>
+						</div>
+						<a href="" class="receipts__banner-img">
+							<img src="img/cover-middle.webp" alt="">
+						</a>
+						<p class="receipts__banner-description">Корпоративное право</p>
+						<p class="receipts__banner-description">Инвестирование: способы, риски, субъекты : монография</p>
+						<p class="receipts__banner-description">Майфат А.В.</p>
+						<p class="receipts__banner-description">4 450 ₽</p>
+						<p class="receipts__banner-description">450 ₽</p>
+						<div class="receipts__banner-iner-two receipts__banner-iner-clon">
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/star.svg' %}
+								4.9
+							</div>
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/like.svg' %}
+								89% рекомендуют
+							</div>
+						</div>
+						<div class="receipts__banner-wrapper">
+							<button class="receipts__banner-button">
+								{% include 'assets/img/basket-mobil.svg' %}
+								<span>В корзину</span>
+							</button>
+							<button class="receipts__banner-button">
+								{% include 'assets/img/flag-mobil.svg' %}
+							</button>
+						</div>
+					</div>
+					<div class="receipts__middle-banner">
+						<div class="receipts__banner-iner">
+							<div class="receipts__banner-text">Бестселлер</div>
+							<div class="receipts__banner-text">1+1=3</div>
+						</div>
+						<a href="" class="receipts__banner-img">
+							<img src="img/cover-middle.webp" alt="">
+						</a>
+						<p class="receipts__banner-description">Корпоративное право</p>
+						<p class="receipts__banner-description">Инвестирование: способы, риски, субъекты : монография</p>
+						<p class="receipts__banner-description">Майфат А.В.</p>
+						<p class="receipts__banner-description">4 450 ₽</p>
+						<div class="receipts__banner-iner-two">
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/star.svg' %}
+								4.9
+							</div>
+							<div class="receipts__banner-text-two">
+								{% include 'assets/img/like.svg' %}
+								89% рекомендуют
+							</div>
+						</div>
+						<div class="receipts__banner-wrapper">
+							<button class="receipts__banner-button">
+								{% include 'assets/img/basket-mobil.svg' %}
+								<span>В корзину</span>
+							</button>
+							<button class="receipts__banner-button">
+								{% include 'assets/img/flag-mobil.svg' %}
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -4,31 +4,33 @@
 			<div class="stock__slider">
 				<div class="stock__slider-item">
 					<div class="stock__slider-img">
-						<img src="img/slide-one.webp" alt="" class="slide__img">
+						<img src="img/slide-one.webp" alt="">
 					</div>
 					<div class="stock__slider-img">
-						<img src="img/slide-two.webp" alt="" class="slide__img">
+						<img src="img/slide-two.webp" alt="">
 					</div>
 					<div class="stock__slider-img">
-						<img src="img/slide-fhree.webp" alt="" class="slide__img">
+						<img src="img/slide-fhree.webp" alt="">
 					</div>
 					<div class="stock__slider-img">
-						<img src="img/slide-fho.webp" alt="" class="slide__img">
+						<img src="img/slide-fho.webp" alt="">
 					</div>
 				</div>
-				<div class="stock__slider-switching">
-					<buthon class="stock__slider-btn"></buthon>
-					<buthon class="stock__slider-btn"></buthon>
-					<buthon class="stock__slider-btn"></buthon>
-					<buthon class="stock__slider-btn"></buthon>
+				<ul class="stock__slider-switching">
+					<li class="active" onclick="o2.stock.dotsHanlder(0)"></li>
+					<li onclick="o2.stock.dotsHanlder(1)"></li>
+					<li onclick="o2.stock.dotsHanlder(2)"></li>
+					<li onclick="o2.stock.dotsHanlder(3)"></li>
+				</ul>
+				<div class="stock__slider-button">
+					<button class="stock__slider-next" onclick="o2.stock.prev()">
+						{% include 'assets/img/prev-arrow.svg' %}
+					</button>
+					<button class="stock__slider-prev" onclick="o2.stock.next()">
+						{% include 'assets/img/next-arrow.svg' %}
+					</button>
 				</div>
 			</div>
-			<button class="stock__slider-next" onclick="o2.stock.prev()">
-				{% include 'assets/img/prev-arrow.svg' %}
-			</button>
-			<button class="stock__slider-prev" onclick="o2.stock.next()">
-				{% include 'assets/img/next-arrow.svg' %}
-			</button>
 			<div class="stock__books">
 				<div class="stock__books-wrapper-top">
 					<p>Книга дня</p>
@@ -65,7 +67,7 @@
 					{% include 'assets/img/pink-line.svg' %}
 					{% include 'assets/img/pink-man.svg' %}
 					<p class="stock__books-pink-text">Скидка</p>
-					<p>при регистрации до 15%</p>
+					<p class="stock__books-pink-text">при регистрации до 15%</p>
 				</div>
 			</div>
 		</div>

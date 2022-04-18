@@ -1,5 +1,5 @@
-o2.stock =
-{
+o2.stock = {
+
 	images: document.querySelectorAll('.stock__slider-item img'),
 	sliderLine: document.querySelector('.stock__slider-item'),
 	count: 0,
@@ -15,6 +15,7 @@ o2.stock =
 		});
 		this.rollSlider();
 	},
+
 	next()
 	{
 		this.count++;
@@ -33,8 +34,23 @@ o2.stock =
 		this.rollSlider();
 	},
 
+	dotsHanlder(pos)
+	{
+		this.count = pos;
+		this.rollSlider();
+		this.init();
+	},
+
+	updateSwitching()
+	{
+		document.querySelector('.stock__slider-switching .active').classList.remove('active');
+		document.querySelector(`.stock__slider-switching li:nth-child(${this.count + 1})`).classList.add('active');
+	},
+
 	rollSlider()
 	{
 		this.sliderLine.style.transform = 'translate(-' + this.count * this.width + 'px)';
-	}
+		this.updateSwitching();
+	},
+
 }

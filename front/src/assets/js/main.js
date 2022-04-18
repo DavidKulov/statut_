@@ -18,10 +18,14 @@ const o2 =
 	init()
 	{
 		this.stock.init();
+		this.receipts.init();
+		this.prepare.init();
+		this.news.init();
+		// this.footer.init();
 	},
 	/**
 	* отслеживание клика вне блока
-	*/ 
+	*/
 	clickOutside(element, callback)
 	{
 		const outsideChecker = (event) =>

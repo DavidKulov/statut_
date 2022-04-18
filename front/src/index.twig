@@ -3,9 +3,9 @@
 {% block page %}
 
 	{% include '/blocks/stock/stock.twig' %}
-	{% include '/blocks/receipts/receipts.twig' with {title: 'Новые поступления'} %}
+	{% include '/blocks/receipts/receipts.twig' with {title: 'Новые поступления', silder: 'slider-news'} %}
 	{% include '/blocks/subscription/subscription.twig' %}
-	{% include '/blocks/receipts/receipts.twig' with {title: 'Готовятся к выходу'} %}
+	{% include '/blocks/prepare/prepare.twig' with {title: 'Готовятся к выходу', silder: 'slider-exit'} %}
 	{% include '/blocks/offers/offers.twig' %}
 	{% include '/blocks/news/news.twig' %}
 
