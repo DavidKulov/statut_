@@ -84,7 +84,7 @@ header
 }
 .header__main-label
 {
-	display: inline-block;
+	display: flex;
 	position: relative;
 	width: 100%;
 }
@@ -396,7 +396,7 @@ header
 	}
 	.header__main-label
 	{
-		display: inline-block;
+		display: flex;
 		position: relative;
 	}
 	.header__main-input
