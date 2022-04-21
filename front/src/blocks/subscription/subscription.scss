@@ -32,6 +32,7 @@
 	display: inline-block;
 	position: relative;
 	margin-bottom: 9px;
+	width: 100%;
 }
 .subscription__input
 {
@@ -43,7 +44,7 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: rgba(28, 41, 77, 0.5);
-	padding: 11px 145px 9px 14px;
+	padding: 11px 0px 9px 14px;
 	border: 1px solid #a3a4a6;
 	outline-offset: 0;
 	letter-spacing: .01em;
@@ -58,6 +59,7 @@
 }
 .subscription__button, input.subscription__button
 {
+	width: 100%;
 	display: inline-block;
 	font-size: 15px;
 	line-height: 18px;
@@ -88,7 +90,7 @@
 			line-height: 25px;
 			color: #FFFFFF;
 			width: 485px;
-			letter-spacing: 0.02em;
+			letter-spacing: 0em;
 			z-index: 2;
 			margin-bottom: 9px;
 			overflow: hidden;
@@ -101,12 +103,17 @@
 			left: 101px;
 		}
 	}
-	.subscription__label {margin-top: 10px;}
-	.subscription__input {padding: 11px 230.5px 9px 14px;}
+	.subscription__label
+	{
+		margin-top: 10px;
+		width: 40%;
+	}
+	.subscription__input {padding: 11px 0px 9px 14px;}
 	.subscription__button, input.subscription__button
 	{
 		padding: 0 23px 0 22px;
 		margin-left: 10.5px;
 		letter-spacing: -0.01em;
+		width: auto;
 	}
 }
